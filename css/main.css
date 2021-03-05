@@ -96,10 +96,13 @@ html {
 body {
  font-family: 'Open Sans', sans-serif;
  font-size: 1em;
+ background-color: #202322;
+ color: white;
 }
  
 ul, 
 ol {
+  font-size: 1.125em;
  
 }
  
@@ -107,17 +110,24 @@ a {
   color: #e2e3ed;
   text-decoration: none;
 }
+h1 {
+  font-size: 2.25em;
+}
  
 h2 {
- 
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
 }
  
 h3, 
 h4 {
  font-family: 'Poppins', sans-serif;
+ font-size: 1.125em;
 }
- 
+
+
 p {
+  font-size: .875em;
   
 }
  
@@ -170,11 +180,15 @@ header {
  	height: 1px;
  	margin: 10px 0 20px 0;
  }
+header a img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
 
+}
 header img {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
 	width: 90%;
 }
 
@@ -209,6 +223,7 @@ header nav ul li a {
 /*-------- footer -------*/
 footer {
 	flex-direction: column;
+  background-color: #202322;
 }
 
 footer p {
@@ -235,6 +250,11 @@ footer .social-icons p {
 
 footer .copyright {
   margin: 20px 0;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
@@ -246,7 +266,14 @@ footer .copyright {
 .hero-area {
 	display: flex;
 	justify-content: center;
+  align-items: center;
 	flex-flow: row-wrap;
+  background-image: url('../img/hero.jpg');
+  max-width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: cover;
+
 }
 
 .hero-area h1 {
@@ -256,12 +283,15 @@ footer .copyright {
 	align-items: center;
 
 }
-
+aside {
+    background-color: #527158;
+}
 aside .form-description {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+
 }
 
 aside .form {
@@ -278,9 +308,10 @@ aside .form {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+  background-image: url('../img/features.jpg');
 }
 .features h2 {
-  margin-bottom: 60px;
+  margin: 20px;
 }
 
 .features article {
@@ -303,6 +334,7 @@ aside .form {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+  background-color: #2a423a;
 }
 .reviews, .content-wrapper, .review-example {
 	display: flex;
@@ -333,6 +365,7 @@ aside .form {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -356,6 +389,7 @@ aside .form {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .contact-section {
@@ -363,12 +397,41 @@ aside .form {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .contact-content p {
   margin: 0;
 }
 
+
+/********FORM**********/
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* ==========================================================================
    Helper classes
@@ -465,7 +528,20 @@ aside .form {
         max-width: 640px;
         margin: 100px 0;
     }
+
+    h1 {
+      font-size: 3em;
+    }
  
+  h2 {
+    font-size: 2.25em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  ul li {
+    font-size: 1em;
+  }
     /* Header */
  
     header {
@@ -499,6 +575,7 @@ aside .form {
         display: flex;
         justify-content: space-between;
         flex-flow: row wrap;
+        width: 50%;
     }
  
     aside .content-wrapper .form-description,
@@ -506,6 +583,13 @@ aside .form {
         width:  40%;       
         margin: 0;
     }
+
+    aside .form .form-description {
+
+
+    }
+
+
    /* Features */
  
     .features article {
@@ -529,6 +613,10 @@ aside .form {
     
     .reviews article div {
         width: 49%;        
+    }
+
+    .reviews {
+      width: 100%;
     }
  
     /* Footer */
@@ -595,11 +683,29 @@ aside .form {
 
 }
  
+ /* ==========================================================================
+  DESKTOP
+     ========================================================================== */
+  
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
 .content-wrapper {
     max-width: 960px;
   }
+
+h1 {
+  font-size: 3.75em;
+}
+ h3 {
+  font-size: 1.875em;
+ }
+ p {
+  font-size: 1.125em;
+ }
+ ul {
+  font-size: 1.125em;
+ }
+
 
   /* Hero */
   .hero-area h1 {
@@ -629,6 +735,11 @@ aside .form {
   /* Reviews */
   .reviews article div {
     width: 42%;
+  }
+
+  .reviews {
+    flex-flow: row wrap;
+    width: 80%;
   }
 
   /* ==========================================================================
