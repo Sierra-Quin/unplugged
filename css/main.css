@@ -98,7 +98,7 @@ body {
  font-size: 1em;
  background-color: #202322;
  color: white;
- text-align: center;
+text-align: left;
 }
  
 ul, 
@@ -373,12 +373,7 @@ input[type=button] {
 	flex-flow: row wrap;
 }
 
-.content-wrapper h2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
-}
+
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
@@ -389,6 +384,13 @@ input[type=button] {
   margin: 20px 0;
 }
 
+.reviews img {
+  width: 100%;
+}
+
+.reviews figure {
+  margin: 0;
+}
 
 /*-------- FAQ page -------*/
 .faq {
@@ -690,6 +692,9 @@ input[type=button] {
     .mission-content p {
       width: 45%;
     }
+  .map figure {
+    padding-bottom: 45.5%;
+  }
   
     .contact-section .content-wrapper h2 {
       width: 80%;
@@ -700,6 +705,7 @@ input[type=button] {
       justify-content: space-between;
       align-items: flex-start;
     }
+
   
     /* ==========================================================================
      FAQ Page
@@ -786,6 +792,11 @@ h1 {
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 95%;
+
+  }
+
+   .map figure {
+    padding-bottom: 37.5%;
   }
 
   /* ==========================================================================
